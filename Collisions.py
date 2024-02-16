@@ -199,8 +199,8 @@ class Collisions:
         result = -1
         min_distance = float("inf")
         #print(len(vertices))
-        for i in vertices:
-            v = i
+        for i in range(len(vertices)):
+            v = vertices[i]
             distance = SimplyVector.distance(v, circle_center)
 
             if distance < min_distance:
